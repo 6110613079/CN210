@@ -1,4 +1,6 @@
-# learning
-## Header
-|Col1  | Col2  | Col3  | Col4  |
-* [งานครั้งที1](https://www.youtube.com/watch?v=uGYZ5Ni3PBE}
+# รายงานวิชา CN230
+## สรุปเนื้อหาวิชา
+
+สรุปเนื้อหา
+ส่งการบ้านครั้งที่ 1
+[CLIP1](https://youtu.be/IyKyMtiQF5Q)
