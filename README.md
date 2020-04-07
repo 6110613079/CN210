@@ -21,10 +21,10 @@
 [CLIP6](https://youtu.be/73PG4tqJF4I)
 
 ส่งการบ้านครั้งที่ 7
-[CLIP7]()
+[CLIP7]
 
 ส่งการบ้านครั้งที่ 8
-[CLIP8]()
+[CLIP8]
 
 
 
