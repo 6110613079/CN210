@@ -1,7 +1,14 @@
 # รายงาน
 # วิชา Computer Architecture สถาปัตยกรรมคอมพิวเตอร์
 ## สรุปเนื้อหา
-MIPS Instruction 
+MIPS Instruction format
+
+R-Format
+|Col1  | Col2  |  Col3 | Col4  | 
+----- | ----- | ----- | ----- |
+|Test1 | Test1 | Test1 | Test1 |
+|Test2 | Test2 | Test2 | Test2 |
+|Test3 | Test3 | Test3 | Test3 |
 
 
 <br>**การบ้านครั้งที่ 1**
