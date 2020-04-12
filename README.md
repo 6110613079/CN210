@@ -2,7 +2,8 @@
 # วิชา Computer Architecture สถาปัตยกรรมคอมพิวเตอร์
 ## สรุปเนื้อหา
 MIPS Instruction format
-
+ทุกคำสั่งใน MIPS จะมีขนาด 32 bits
+มี 3 ประเภท
 R-Format
 
 |op  | rs  |  rt | rd  | shamt  | func  |
@@ -21,6 +22,13 @@ J-Format
 <br>**การบ้านครั้งที่ 1**
 
 คำสั่ง ADD ในคอมพิวเตอร์ MIPS
+ex  
+|     | registerตัวที่   | binary |
+----- | ----- | ----- |
+| rs | $3 | 00011 |
+| rt | $2 | 00010 |
+| rd | $8 | 01000 |
+
 
 ส่งการบ้านครั้งที่ 1
 [CLIP1](https://youtu.be/IyKyMtiQF5Q)
