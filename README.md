@@ -13,7 +13,10 @@ I-Format
 |op  | rs  |  rt | value or offset |
 ----- | ----- | ----- | ----- | 
 
+J-Format
 
+|op  | absolute address |
+----- | ----- | 
 
 <br>**การบ้านครั้งที่ 1**
 
