@@ -5,10 +5,6 @@ MIPS Instruction format
 
 R-Format
 |op  | rs  |  rt | rd  | shamt | func |
-|Test1 | Test1 | Test1 | Test1 |
-|Test2 | Test2 | Test2 | Test2 |
-|Test3 | Test3 | Test3 | Test3 |
-
 
 <br>**การบ้านครั้งที่ 1**
 
