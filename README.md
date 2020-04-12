@@ -6,8 +6,8 @@ MIPS Instruction format
 R-Format
 
 |op  | rs  |  rt | rd  | shamt  | func  |
------ | ----- | ----- | ----- |
-|test1 | test2 |
+----- | ----- | ----- | ----- | ----- | ----- |
+
 
 <br>**การบ้านครั้งที่ 1**
 
