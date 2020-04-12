@@ -5,7 +5,7 @@ MIPS Instruction format
 
 R-Format
 
-|op  | rs  |  Col3 | Col4  | 
+|op  | rs  |  rt | rd  | 
 ----- | ----- | ----- | ----- |
 |test1 | test2 |
 
