@@ -4,8 +4,10 @@
 MIPS Instruction format
 
 R-Format
-|Test1 | Test1 | Test1 | Test1 |
-|Test2 | Test2 |
+
+|Col1  | Col2  |  Col3 | Col4  | 
+----- | ----- | ----- | ----- |
+|Test1 | Test1 |
 
 <br>**การบ้านครั้งที่ 1**
 
