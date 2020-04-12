@@ -5,7 +5,7 @@ MIPS Instruction format
 
 R-Format
 
-|op  | rs  |  rt | rd  | 
+|op  | rs  |  rt | rd  | shamt  | func  |
 ----- | ----- | ----- | ----- |
 |test1 | test2 |
 
