@@ -8,6 +8,12 @@ R-Format
 |op  | rs  |  rt | rd  | shamt  | func  |
 ----- | ----- | ----- | ----- | ----- | ----- |
 
+I-Format
+
+|op  | rs  |  rt | value or offset |
+----- | ----- | ----- | ----- | 
+
+
 
 <br>**การบ้านครั้งที่ 1**
 
