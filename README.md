@@ -7,7 +7,7 @@ R-Format
 
 |Col1  | Col2  |  Col3 | Col4  | 
 ----- | ----- | ----- | ----- |
-|Test1 | Test1 |
+|test1 | test2 |
 
 <br>**การบ้านครั้งที่ 1**
 
