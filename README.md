@@ -280,21 +280,47 @@ beq $rs,$rt,$offset
 
 ### State Machine ของคำสั่ง R-Type
 
-![image](https://image1.slideserve.com/3211244/slide14-n.jpg)
-
 ![image](https://image1.slideserve.com/3211244/the-four-stages-of-r-format-n.jpg)
 
-<br>**State machine คำสั่ง R-Type**
+### Cycle 1 Instruction Fetch
 
 ![image](https://image1.slideserve.com/3211244/slide21-n.jpg)
 
-*ตัวหนังสือสีแดงในกรอบ instruction fetch ของcycle 1 แสดงคำสั่งที่ใช้ใน cycleนี้
+*cycle 1 instruction fetch ตัวหนังสือสีแดงแสดงสิ่งที่ทำ ส่วนสีดำคือยังไม่ทำใน cycle นี้ *
+*ดูที่ตัวหนังสือสีแดง บรรทัดแรก อ่านคำสั่งจาก memory บรรทัดที่ 2 เอาค่าที่ address ชี้จาก PC มาไว้ที่ memory address 
+บรรทัดที่ 3 เอาคำสั่งมาเขียนที่ Instruction register บรรทัดที่ 4 มี ALUSrcA ควบคุม (เข้า 0 ตรง MUX) 
+บรรทัดที่ 5 ALUSrcBควบคุม (เข้า 1ตรง MUX) บรรทัดที่ 6 ALUOP ควบคุมคำสั่งให้เป็น คำสั่ง ADD 
+บรรทัดที่ 7 เขียนลงบน PC *
 
+### Cycle 2 Decode & Register Fetch 
 
+![image](https://image1.slideserve.com/3211244/slide23-n.jpg)
+
+*cycle 2 Decode & Register Fetch ตัวหนังสือสีแดงแสดงสิ่งที่ทำ ส่วนสีดำคือยังไม่ทำใน cycle นี้ *
+*ดูที่ตัวหนังสือสีแดง บรรทัดแรก มี ALUSrcA ควบคุม (เข้า 0 ตรง MUX) 
+บรรทัดที่ 2 มี ALUSrcB ควบคุม (เข้า3 ตรง MUX) บรรทัดที่ 3 ALUOP ควบคุมคำสั่งให้เป็น คำสั่ง ADD*
+
+### Cycle 3 R-Format Execution
+
+![image](https://image1.slideserve.com/3211244/slide25-n.jpg)
+
+*cycle 3 R-Format Execution ตัวหนังสือสีแดงแสดงสิ่งที่ทำ ส่วนสีดำคือยังไม่ทำใน cycle นี้ *
+*ดูที่ตัวหนังสือสีแดง บรรทัดแรก มี ALUSrcA ควบคุม (เข้า 1 ตรง MUX) 
+บรรทัดที่ 2 มี ALUSrcB ควบคุม (เข้า 0 ตรง MUX) บรรทัดที่ 3 ALUOP ควบคุมคำสั่งให้เป็น คำสั่ง ตามคำสั่งใน Instruction register*
+
+### Cycle 4 R-Format Write Register
+
+![image](https://image1.slideserve.com/3211244/slide27-n.jpg)
+
+*cycle 4 R-Format Write Register ตัวหนังสือสีแดงแสดงสิ่งที่ทำ ส่วนสีดำคือยังไม่ทำใน cycle นี้ *
+*ดูที่ตัวหนังสือสีแดง บรรทัดแรก คือมีการเขียนบน register บรรทัดที่ 2 มีการนำค่าจาก memory ไปที่ register 
+บรรทัดที่ 3 มี RegDst ควบคุม (เข้า 1 ตรง MUX)*
 
 <br>**ส่งการบ้านครั้งที่ 6**
 
 [CLIP6](https://youtu.be/73PG4tqJF4I)
+
+
 
 <br>**ส่งการบ้านครั้งที่ 7**
 
