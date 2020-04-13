@@ -1,6 +1,6 @@
-# รายงาน
-# วิชา Computer Architecture สถาปัตยกรรมคอมพิวเตอร์
-## สรุปเนื้อหา
+## รายงาน
+## วิชา Computer Architecture สถาปัตยกรรมคอมพิวเตอร์
+### สรุปเนื้อหา
 <br>**MIPS Instruction format**
 
 ทุกคำสั่งใน MIPS จะมีขนาด 32 bits
