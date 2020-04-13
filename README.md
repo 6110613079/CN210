@@ -211,21 +211,29 @@
 คำสั่ง Load word มีการทำงาน 5 ขั้นตอน ดังนี้
 
 1. IR = Memory[PC]
+
    PC = PC + 4
+   
    *(อ่านคำสั่งจาก Memory มาเก็บใน Instruction register ขณะเดียวกัน PC = PC + 4)*
    
 2. A = Reg[IR[25-21]]
+
    B = Reg[IR[20-16]]
+   
    ALUout = PC + (sign-extend(IR[15-0])<<2)
+   
    *(แปลงคำสั่ง นำค่า rs กับ rt เก็บที่ A,B นำค่า offset(แปลงเป็น 32 bits และ shiftซ้าย 2) มาที่ ALU และนำมาบวกกับ PC(PC+4) )*
  
 3. ALUOut = A + sign-extend(IR[15-0])
+
   *(นำค่า จาก A เข้ามาบวกกับ offset และนำค่าไปไว้ที่ ALUout)*
  
 4. MDR = Memory[ALUout]
+
   *(ค่าที่ได้จาก ALUout คือ address มันจะไปชี้ address นี้ที่ memory และก็อ่านค่าออกมา)
   
 5. Reg[IR[20-16]] = MDR
+
   *(ค่าที่อ่านออกมานำไปใส่ใน register rt)
 
 <br>**ส่งการบ้านครั้งที่ 4**
