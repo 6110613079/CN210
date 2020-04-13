@@ -202,11 +202,13 @@
 
 <br>**การบ้านครั้งที่ 4**
 
-### การทำงานแบบ Multi cycle ของคำสั่ง Load Word ใน MIPS
+### การทำงานแบบ Multi cycle ของคำสั่ง Load Word(lw) ใน MIPS
 
 ![image](https://i.imgur.com/mWXHWpT.png)
 
 จากรูป Multi cycle 
+
+lw $rt,offset($rs)
 
 คำสั่ง Load word มีการทำงาน 5 ขั้นตอน ดังนี้
 
@@ -222,7 +224,7 @@
    
    ALUout = PC + (sign-extend(IR[15-0])<<2)
    
-    *(แปลงคำสั่ง นำค่า rs กับ rt เก็บที่ A,B นำค่า offset(แปลงเป็น 32 bits และ shiftซ้าย 2) มาที่ ALU และนำมาบวกกับ PC(PC+4) )*
+    *(แปลงคำสั่ง นำค่า rs กับ rt เก็บที่ A,B นำค่า offset(แปลงเป็น 32 bits และ shiftซ้าย 2) มาที่ ALU และนำมาบวกกับ PC(PC+4) และไปเก็บที่ ALUout)*
  
 3. ALUOut = A + sign-extend(IR[15-0])
 
@@ -240,9 +242,45 @@
 
 [CLIP4](https://youtu.be/bEka1oMBni0)
 
+<br>**การบ้านครั้งที่ 5**
+
+### การทำงานแบบ Multi cycle ของคำสั่ง Branch on equal(beq) ใน MIPS
+
+![image](https://i.imgur.com/mWXHWpT.png)
+
+จากรูป Multi cycle 
+
+beq $rs,$rt,$offset
+
+คำสั่ง Branch on equal มีการทำงาน 3 ขั้นตอน ดังนี้
+
+1. IR = Memory[PC]
+
+   PC = PC + 4
+   
+   *(อ่านคำสั่งจาก Memory มาเก็บใน Instruction register ขณะเดียวกัน PC = PC + 4 )*
+   
+2. A = Reg[IR[25-21]]
+
+   B = Reg[IR[20-16]]
+   
+   ALUout = PC + (sign-extend(IR[15-0])<<2)
+   
+    *(แปลงคำสั่ง นำค่า rs กับ rt เก็บที่ A,B นำค่า offset(แปลงเป็น 32 bits และ shiftซ้าย 2) มาที่ ALU และนำมาบวกกับ PC(PC+4) )*
+    
+3. if(A==B) then PC = ALUout
+
+   *(branch on equal จะเป็นคำสั่งที่ดูว่า A=B มั้ย ถ้าเท่ามันจะทำการ jump ไปที่ address ใหม่(ที่เกิดจาก offset + PC)*
+
 <br>**ส่งการบ้านครั้งที่ 5**
 
 [CLIP5](https://youtu.be/tH1uvTTxsqw)
+
+<br>**การบ้านครั้งที่ 6**
+
+### State Machine ของคำสั่ง R-Type
+
+
 
 <br>**ส่งการบ้านครั้งที่ 6**
 
@@ -250,7 +288,7 @@
 
 <br>**ส่งการบ้านครั้งที่ 7**
 
-[CLIP7](
+[CLIP7](https://youtu.be/kEEjiIiV1cc)
 
 
 
