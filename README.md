@@ -110,8 +110,10 @@ class Test{
     }
 }
 
-            === Machine Language ===
+=== Machine Language ===
 00000000:           08400000        //j  01000000
+
+
 ส่งการบ้านครั้งที่ 2
 [CLIP2](https://youtu.be/AhHoyF2xnng)
 
