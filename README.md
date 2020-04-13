@@ -280,6 +280,16 @@ beq $rs,$rt,$offset
 
 ### State Machine ของคำสั่ง R-Type
 
+![image](https://image1.slideserve.com/3211244/slide14-n.jpg)
+
+![image](https://image1.slideserve.com/3211244/the-four-stages-of-r-format-n.jpg)
+
+<br>**State machine คำสั่ง R-Type**
+
+![image](https://image1.slideserve.com/3211244/slide21-n.jpg)
+
+*ตัวหนังสือสีแดงในกรอบ instruction fetch ของcycle 1 แสดงคำสั่งที่ใช้ใน cycleนี้
+
 
 
 <br>**ส่งการบ้านครั้งที่ 6**
