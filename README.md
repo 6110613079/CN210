@@ -13,7 +13,6 @@
 ----- | ----- | ----- | ----- | ----- | ----- |
 
 |ALU  |   alu    $rd,$rs,$rt|
------|-----|
 |jr   |   jr     $rs|
 
 <br>**I-Format** (ใช้ย้ายข้อมูลเปลี่ยนข้อมูล)
@@ -22,7 +21,6 @@
 ----- | ----- | ----- | ----- | 
 
 |ALUi      |  alui  $rt,$rs,value |
------ |-----|
 |Data  Transfer    |  lw    $rt,offset($rs) |
 |                  |  sw    $rt,offset($rs) |
 |Branch            |  beq   $rs,$rt,offset |
@@ -33,7 +31,6 @@
 ----- | ----- | 
 
 |Jump      |  j   address|
------ |-----|
 |Jump&Link  | jal   address|
 
 <br>**การบ้านครั้งที่ 1**
