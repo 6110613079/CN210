@@ -222,19 +222,19 @@
    
    ALUout = PC + (sign-extend(IR[15-0])<<2)
    
-   *(แปลงคำสั่ง นำค่า rs กับ rt เก็บที่ A,B นำค่า offset(แปลงเป็น 32 bits และ shiftซ้าย 2) มาที่ ALU และนำมาบวกกับ PC(PC+4) )*
+    *(แปลงคำสั่ง นำค่า rs กับ rt เก็บที่ A,B นำค่า offset(แปลงเป็น 32 bits และ shiftซ้าย 2) มาที่ ALU และนำมาบวกกับ PC(PC+4) )*
  
 3. ALUOut = A + sign-extend(IR[15-0])
 
-  *(นำค่า จาก A เข้ามาบวกกับ offset และนำค่าไปไว้ที่ ALUout)*
+    *(นำค่า จาก A เข้ามาบวกกับ offset และนำค่าไปไว้ที่ ALUout)*
  
 4. MDR = Memory[ALUout]
 
-  *(ค่าที่ได้จาก ALUout คือ address มันจะไปชี้ address นี้ที่ memory และก็อ่านค่าออกมา)
+    *(ค่าที่ได้จาก ALUout คือ address มันจะไปชี้ address นี้ที่ memory และก็อ่านค่าออกมา)*
   
 5. Reg[IR[20-16]] = MDR
 
-  *(ค่าที่อ่านออกมานำไปใส่ใน register rt)
+    *(ค่าที่อ่านออกมานำไปใส่ใน register rt)*
 
 <br>**ส่งการบ้านครั้งที่ 4**
 
