@@ -297,7 +297,7 @@ beq $rs,$rt,$offset
 
 ![image](https://image1.slideserve.com/3211244/slide23-n.jpg)
 
-*cycle 2 Decode & Register Fetch ตัวหนังสือสีแดงแสดงสิ่งที่ทำ ส่วนสีดำคือยังไม่ทำใน cycle นี้ *
+*cycle 2 Decode & Register Fetch ตัวหนังสือสีแดงแสดงสิ่งที่ทำ ส่วนสีดำคือยังไม่ทำใน cycle นี้*
 
 *ดูที่ตัวหนังสือสีแดง บรรทัดแรก มี ALUSrcA ควบคุม (เข้า 0 ตรง MUX) 
 บรรทัดที่ 2 มี ALUSrcB ควบคุม (เข้า3 ตรง MUX) บรรทัดที่ 3 ALUOP ควบคุมคำสั่งให้เป็น คำสั่ง ADD*
@@ -315,7 +315,7 @@ beq $rs,$rt,$offset
 
 ![image](https://image1.slideserve.com/3211244/slide27-n.jpg)
 
-*cycle 4 R-Format Write Register ตัวหนังสือสีแดงแสดงสิ่งที่ทำ ส่วนสีดำคือยังไม่ทำใน cycle นี้ *
+*cycle 4 R-Format Write Register ตัวหนังสือสีแดงแสดงสิ่งที่ทำ ส่วนสีดำคือยังไม่ทำใน cycle นี้*
 
 *ดูที่ตัวหนังสือสีแดง บรรทัดแรก คือมีการเขียนบน register บรรทัดที่ 2 มีการนำค่าจาก memory ไปที่ register 
 บรรทัดที่ 3 มี RegDst ควบคุม (เข้า 1 ตรง MUX)*
