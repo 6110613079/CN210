@@ -1,42 +1,40 @@
 # รายงาน
 # วิชา Computer Architecture สถาปัตยกรรมคอมพิวเตอร์
 ## สรุปเนื้อหา
-MIPS Instruction format
+<br>**MIPS Instruction format**
 
 ทุกคำสั่งใน MIPS จะมีขนาด 32 bits
 
 มี 3 ประเภท
 
-R-Format (ส่วนใหญ่ใช้ในการคำนวณทางตรรกศาสตร์)
+<br>**R-Format** (ส่วนใหญ่ใช้ในการคำนวณทางตรรกศาสตร์)
 
 |op  | rs  |  rt | rd  | shamt  | func  |
 ----- | ----- | ----- | ----- | ----- | ----- |
 
-ALU    alu $rd,$rs,$rt
+|ALU  |   alu    $rd,$rs,$rt|
+-----|-----|
+|jr   |   jr     $rs|
 
-jr     jr $rs
-
-I-Format (ใช้ย้ายข้อมูลเปลี่ยนข้อมูล)
+<br>**I-Format** (ใช้ย้ายข้อมูลเปลี่ยนข้อมูล)
 
 |op  | rs  |  rt | value or offset |
 ----- | ----- | ----- | ----- | 
 
-ALUi        alui $rt,$rs,value
+|ALUi      |  alui  $rt,$rs,value |
+----- |-----|
+|Data  Transfer    |  lw    $rt,offset($rs) |
+|                  |  sw    $rt,offset($rs) |
+|Branch            |  beq   $rs,$rt,offset |
 
-Data        lw $rt,offset($rs)
-
-Transfer    sw $rt,offset($rs)
-
-Branch      beq $rs,$rt,offset
-
-J-Format (Jumpไปทำงานที่อื่น)
+<br>**J-Format** (Jumpไปทำงานที่อื่น)
 
 |op  | absolute address |
 ----- | ----- | 
 
-Jump        j address
-
-Jump&Link   jal address
+|Jump      |  j   address|
+----- |-----|
+|Jump&Link  | jal   address|
 
 <br>**การบ้านครั้งที่ 1**
 
