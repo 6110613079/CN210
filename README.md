@@ -68,7 +68,7 @@
 ดังนั้น คำสั่งที่ส่งให้คอมพิวเตอร์ทำการบวก $rs $rt และนำผลลัพธ์ไปเขียนที่ $rd คือ 00624020
 
 ALU decoder 
-![image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F25331849%2Falu-control-logic-equation-on-mips-processor&psig=AOvVaw0b5W7Bpf-YTi07jYBQFWPr&ust=1586849372806000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNCW1tTw5OgCFQAAAAAdAAAAABAx)
+![image](https://i.stack.imgur.com/QwYfS.gif)
 
 เนื่องจากคำสั่งนี้เป็นประเภท R-Format จึงมีการเขียนคำสั่งเป็น 6 ส่วน
 เมื่อคอมพิวเตอร์ได้รับคำสั่งนี้ ตัว decoder ที่อยู่ในคอมพิวเตอร์จะทำการแปลเป็นคำสั่ง 
