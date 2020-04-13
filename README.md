@@ -4,26 +4,37 @@
 MIPS Instruction format
 ทุกคำสั่งใน MIPS จะมีขนาด 32 bits
 มี 3 ประเภท
-R-Format
+
+R-Format (ส่วนใหญ่ใช้ในการคำนวณทางตรรกศาสตร์)
 
 |op  | rs  |  rt | rd  | shamt  | func  |
 ----- | ----- | ----- | ----- | ----- | ----- |
 
-I-Format
+ALU    alu $rd,$rs,$rt
+jr     jr $rs
+
+I-Format (ใช้ย้ายข้อมูลเปลี่ยนข้อมูล)
 
 |op  | rs  |  rt | value or offset |
 ----- | ----- | ----- | ----- | 
 
-J-Format
+ALUi        alui $rt,$rs,value
+Data        lw $rt,offset($rs)
+Transfer    sw $rt,offset($rs)
+Branch      beq $rs,$rt,offset
+
+J-Format (Jumpไปทำงานที่อื่น)
 
 |op  | absolute address |
 ----- | ----- | 
+Jump        j address
+Jump&Link   jal address
 
 <br>**การบ้านครั้งที่ 1**
 
 คำสั่ง ADD ในคอมพิวเตอร์ MIPS
 ซึ่งเป็นคำสั่ง ประเภท R-Format 
-หลักการทำงาน คือ rd = rs+rt
+หลักการทำงาน คือ $rd = $rs + $rt
 ตัวอย่าง
 |     | registerตัวที่   | binary |
 ----- | ----- | ----- |
@@ -33,7 +44,10 @@ J-Format
 
 |op  | rs  |  rt | rd  | shamt  | func  |
 ----- | ----- | ----- | ----- | ----- | ----- |
-| 000000 | 00011 | 00010 | 00000 | 100000 |
+| 000000 | 00011 | 00010 | 00100 | 00000 | 100000 |
+คำสั่งที่ส่งให้คอมพิวเตอร์ทำการบวก $rs $rt และนำผลลัพธ์ไปเขียนที่ $rd คือ
+ฐาน 2 > 00000000011000100010000000100000
+ฐาน 16 > 00624020
 
 ส่งการบ้านครั้งที่ 1
 [CLIP1](https://youtu.be/IyKyMtiQF5Q)
