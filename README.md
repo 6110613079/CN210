@@ -328,6 +328,8 @@ beq $rs,$rt,$offset
 
 ### Pipelining
 
+![image](https://lh3.googleusercontent.com/proxy/9RK_eqF1OdPvhTbs5d67iAiKAeSxwmPTsW7u-6r8edji9RjjYNrsfrgfe254Gz4binxA5CD0Qd3mDmks9tgMvKSBJ_6v20UI9Q)
+
 เป็น Memory ที่อยู่ระหว่าง CPU กับภายนอก
 
 ทำหน้าที่ลำดับคำสั่งให้มันทำงานเร็วขึ้นและเก็บเฉพาะคำสั่ง
@@ -335,6 +337,7 @@ beq $rs,$rt,$offset
 Pipeline มีหลักการทำงานคือ ถ้า step แรกวงจรว่าง ก็สามารถดึง step 2 มาทำได้เลย โดยไม่ต้องรอ step 1 เสร็จ
 
 1 คำสั่งจบในหลาย cycle แม้คำสั่งแรกยังไม่เสร็จแต่สามารถนำคำสั่งถัดไปมาทำต่อได้เลย
+
 
 <br>**ส่งการบ้านครั้งที่ 7**
 
