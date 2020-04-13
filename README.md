@@ -12,8 +12,9 @@
 |op  | rs  |  rt | rd  | shamt  | func  |
 ----- | ----- | ----- | ----- | ----- | ----- |
 
-|ALU  |   alu    $rd,$rs,$rt|
+|คำสั่ง |    |
 ----- | ----- |
+|ALU  |   alu    $rd,$rs,$rt|
 |jr   |   jr     $rs|
 
 <br>**I-Format** (ใช้ย้ายข้อมูลเปลี่ยนข้อมูล)
@@ -21,8 +22,9 @@
 |op  | rs  |  rt | value or offset |
 ----- | ----- | ----- | ----- | 
 
-|ALUi      |  alui  $rt,$rs,value |
+|คำสั่ง |    |
 ----- | ----- |
+|ALUi      |  alui  $rt,$rs,value |
 |Data  Transfer    |  lw    $rt,offset($rs) |
 |                  |  sw    $rt,offset($rs) |
 |Branch            |  beq   $rs,$rt,offset |
@@ -32,8 +34,9 @@
 |op  | absolute address |
 ----- | ----- | 
 
-|Jump      |  j   address|
+|คำสั่ง |    |
 ----- | ----- |
+|Jump      |  j   address|
 |Jump&Link  | jal   address|
 
 <br>**การบ้านครั้งที่ 1**
