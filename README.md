@@ -168,9 +168,9 @@
 
 ### เปรียบเทียบ Single Cycle และ Multi Cycle 
 
-![image](https://lh3.googleusercontent.com/proxy/QOwMoH0OyKm0qeDmUa5bfQzgyqF_fIav4WIDlB4QWS3Jz2Jg2NpSKVTni3RKpdJEAZAPDj1ekhsNvfIzTw)
-
 <br>**Single cycle**
+
+![image](https://cseweb.ucsd.edu/~j2lau/cs141/single_cycle_cpu_datapath.png)
 
 * มี 3 ALU
 
@@ -180,9 +180,9 @@
 
 * เวลาแต่ละคำสั่งเท่ากัน(เป็นเวลาของคำสั่งที่นานที่สุด)
 
-![image](https://i.imgur.com/mWXHWpT.png)
-
 <br>**Multi cycle**
+
+![image](https://i.imgur.com/mWXHWpT.png)
 
 * มี 1 ALU
 
