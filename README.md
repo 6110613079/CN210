@@ -166,7 +166,9 @@
 
 <br>**การบ้านครั้งที่ 3**
 
-## เปรียบเทียบ Single Cycle และ Multi Cycle 
+### เปรียบเทียบ Single Cycle และ Multi Cycle 
+
+![image](https://lh3.googleusercontent.com/proxy/QOwMoH0OyKm0qeDmUa5bfQzgyqF_fIav4WIDlB4QWS3Jz2Jg2NpSKVTni3RKpdJEAZAPDj1ekhsNvfIzTw)
 
 <br>**Single cycle**
 
@@ -177,6 +179,22 @@
 * คำสั่งจบใน Cycle เดียว
 
 * เวลาแต่ละคำสั่งเท่ากัน(เป็นเวลาของคำสั่งที่นานที่สุด)
+
+![image](https://i.imgur.com/mWXHWpT.png)
+
+<br>**Multi cycle**
+
+* มี 1 ALU
+
+* มี 1 Memory 
+
+* แต่ละคำสั่ง ไม่จบใน cycle เดียว
+
+* เวลาแต่ละคำสั่ง ไม่เท่ากัน
+
+* มีการเก็บพัก data ที่ตัวแปร A,B ก่อน
+
+* มีการนำค่าที่คำนวณได้ไปเก็บ ใน ALUout ก่อนด้วย
 
 
 <br>**ส่งการบ้านครั้งที่ 3**
