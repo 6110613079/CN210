@@ -104,7 +104,7 @@
 
 ## ส่งการบ้านครั้งที่ 1
 
-# [คลิปอธิบายคำสั่ง ADD in MIPS](https://youtu.be/IyKyMtiQF5Q)
+### [คลิปอธิบายคำสั่ง ADD in MIPS](https://youtu.be/IyKyMtiQF5Q)
 
 ## การบ้านครั้งที่ 2
 
@@ -176,7 +176,7 @@
         
 ## ส่งการบ้านครั้งที่ 2
 
-# [คลิปอธิบายการทำงานของ CPU](https://youtu.be/AhHoyF2xnng)
+### [คลิปอธิบายการทำงานของ CPU](https://youtu.be/AhHoyF2xnng)
 
 ## การบ้านครั้งที่ 3
 
@@ -212,7 +212,7 @@
 
 ## ส่งการบ้านครั้งที่ 3
 
-# [คลิปเปรียบเทียบ Single cycle และ Multi cycle](https://youtu.be/nflcyI8XoiA)
+### [คลิปเปรียบเทียบ Single cycle และ Multi cycle](https://youtu.be/nflcyI8XoiA)
 
 ## การบ้านครั้งที่ 4
 
@@ -254,7 +254,7 @@ lw $rt,offset($rs)
 
 ## ส่งการบ้านครั้งที่ 4
 
-# [คลิป อธิบายการทำงานแบบ Multi cycle ของคำสั่ง Load Word(lw) ใน MIPS](https://youtu.be/bEka1oMBni0)
+### [คลิป อธิบายการทำงานแบบ Multi cycle ของคำสั่ง Load Word(lw) ใน MIPS](https://youtu.be/bEka1oMBni0)
 
 ## การบ้านครั้งที่ 5
 
@@ -288,7 +288,7 @@ beq $rs,$rt,$offset
 
 ## ส่งการบ้านครั้งที่ 5
 
-# [คลิป อธิบายการทำงานแบบ Multi cycle ของคำสั่ง Branch on equal(beq) ใน MIPS](https://youtu.be/tH1uvTTxsqw)
+### [คลิป อธิบายการทำงานแบบ Multi cycle ของคำสั่ง Branch on equal(beq) ใน MIPS](https://youtu.be/tH1uvTTxsqw)
 
 ## การบ้านครั้งที่ 6
 
@@ -336,7 +336,7 @@ beq $rs,$rt,$offset
 
 ## ส่งการบ้านครั้งที่ 6
 
-# [คลิปอธิบาย State Machine ของคำสั่ง R-Type](https://youtu.be/73PG4tqJF4I)
+### [คลิปอธิบาย State Machine ของคำสั่ง R-Type](https://youtu.be/73PG4tqJF4I)
 
 ## การบ้านครั้งที่ 7
 
@@ -354,7 +354,7 @@ beq $rs,$rt,$offset
 
 ## ส่งการบ้านครั้งที่ 7
 
-# [คลิปอธิบาย Pipelining](https://youtu.be/kEEjiIiV1cc)
+### [คลิปอธิบาย Pipelining](https://youtu.be/kEEjiIiV1cc)
 
 
 
