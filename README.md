@@ -84,23 +84,23 @@
 เนื่องจากคำสั่งนี้เป็นประเภท R-Format จึงมีการเขียนคำสั่งเป็น 6 ส่วน
 เมื่อคอมพิวเตอร์ได้รับคำสั่งนี้ ตัว decoder ที่อยู่ในคอมพิวเตอร์จะทำการแปลเป็นคำสั่ง(ดูได้จาก ตาราง ALU decoder)
 
-6 bits แรกคือ opcode ถ้า opcode เป็น 000000 แสดงว่าเป็นประเภท R-Format
+    6 bits แรกคือ opcode ถ้า opcode เป็น 000000 แสดงว่าเป็นประเภท R-Format
 
-5 bits  ถัดมาคือ register rs => registerตัวที่ 3
+    5 bits  ถัดมาคือ register rs => registerตัวที่ 3
 
-5 bits  ถัดมาคือ register rt => registerตัวที่ 2
+    5 bits  ถัดมาคือ register rt => registerตัวที่ 2
 
-5 bits  ถัดมาคือ register rd => registerตัวที่ 8
+    5 bits  ถัดมาคือ register rd => registerตัวที่ 8
 
-5 bits  ถัดมาคือ shamt คือ shift amount ในคำสั่งนี้ไม่ได้ใช้จึงเป็น 00000
+    5 bits  ถัดมาคือ shamt คือ shift amount ในคำสั่งนี้ไม่ได้ใช้จึงเป็น 00000
 
-6 bits สุดท้าย คือ func เป็นตัวบอกว่าใช้คำสั่งอะไร ในที่นี้เป็น 100000 ซึ่งเป็นคำสั่ง ADD สั่งให้บวก
+    6 bits สุดท้าย คือ func เป็นตัวบอกว่าใช้คำสั่งอะไร ในที่นี้เป็น 100000 ซึ่งเป็นคำสั่ง ADD สั่งให้บวก
 
-คอมพิวเตอร์จะทำการนำ registerตัวที่ 3 บวกกับ registerตัวที่ 2 และนำค่าที่ได้ไปเก็บที่ registerตัวที่ 8
+    คอมพิวเตอร์จะทำการนำ registerตัวที่ 3 บวกกับ registerตัวที่ 2 และนำค่าที่ได้ไปเก็บที่ registerตัวที่ 8
 
-<br>**ส่งการบ้านครั้งที่ 1**
+## ส่งการบ้านครั้งที่ 1
 
-[CLIP1](https://youtu.be/IyKyMtiQF5Q)
+[คลิปอธิบายคำสั่ง ADD in MIPS](https://youtu.be/IyKyMtiQF5Q)
 
 ## การบ้านครั้งที่ 2
 
@@ -170,9 +170,9 @@
 
         1A000008:           0000001E        //c = 30
         
-<br>**ส่งการบ้านครั้งที่ 2**
+## ส่งการบ้านครั้งที่ 2
 
-[CLIP2](https://youtu.be/AhHoyF2xnng)
+[คลิปอธิบายการทำงานของ CPU](https://youtu.be/AhHoyF2xnng)
 
 ## การบ้านครั้งที่ 3
 
@@ -182,33 +182,33 @@
 
 ![image](https://cseweb.ucsd.edu/~j2lau/cs141/single_cycle_cpu_datapath.png)
 
-* มี 3 ALU
+    * มี 3 ALU
 
-* มี 2 Memory
+    * มี 2 Memory
 
-* คำสั่งจบใน Cycle เดียว
+    * คำสั่งจบใน Cycle เดียว
 
-* เวลาแต่ละคำสั่งเท่ากัน(เป็นเวลาของคำสั่งที่นานที่สุด)
+    * เวลาแต่ละคำสั่งเท่ากัน(เป็นเวลาของคำสั่งที่นานที่สุด)
 
 <br>**Multi cycle**
 
 ![image](https://i.imgur.com/mWXHWpT.png)
 
-* มี 1 ALU
+    * มี 1 ALU
+  
+    * มี 1 Memory 
 
-* มี 1 Memory 
+    * แต่ละคำสั่ง ไม่จบใน cycle เดียว
 
-* แต่ละคำสั่ง ไม่จบใน cycle เดียว
+    * เวลาแต่ละคำสั่ง ไม่เท่ากัน
 
-* เวลาแต่ละคำสั่ง ไม่เท่ากัน
+    * มีการเก็บพัก data ที่ตัวแปร A,B ก่อน
 
-* มีการเก็บพัก data ที่ตัวแปร A,B ก่อน
+    * มีการนำค่าที่คำนวณได้ไปเก็บ ใน ALUout ก่อนด้วย
 
-* มีการนำค่าที่คำนวณได้ไปเก็บ ใน ALUout ก่อนด้วย
+## ส่งการบ้านครั้งที่ 3
 
-<br>**ส่งการบ้านครั้งที่ 3**
-
-[CLIP3](https://youtu.be/nflcyI8XoiA)
+[คลิปเปรียบเทียบ Single cycle และ Multi cycle](https://youtu.be/nflcyI8XoiA)
 
 ## การบ้านครั้งที่ 4
 
@@ -220,37 +220,37 @@
 
 lw $rt,offset($rs)
 
-คำสั่ง Load word มีการทำงาน 5 ขั้นตอน ดังนี้
+    คำสั่ง Load word มีการทำงาน 5 ขั้นตอน ดังนี้
 
-1. IR = Memory[PC]
+    1. IR = Memory[PC]
 
-   PC = PC + 4
+      PC = PC + 4
    
-   *(อ่านคำสั่งจาก Memory มาเก็บใน Instruction register ขณะเดียวกัน PC = PC + 4)*
+  *(อ่านคำสั่งจาก Memory มาเก็บใน Instruction register ขณะเดียวกัน PC = PC + 4)*
    
-2. A = Reg[IR[25-21]]
+    2. A = Reg[IR[25-21]]
 
-   B = Reg[IR[20-16]]
+      B = Reg[IR[20-16]]
    
-   ALUout = PC + (sign-extend(IR[15-0])<<2)
+      ALUout = PC + (sign-extend(IR[15-0])<<2)
    
-    *(แปลงคำสั่ง นำค่า rs กับ rt เก็บที่ A,B นำค่า offset(แปลงเป็น 32 bits และ shiftซ้าย 2) มาที่ ALU และนำมาบวกกับ PC(PC+4) และไปเก็บที่ ALUout)*
+  *(แปลงคำสั่ง นำค่า rs กับ rt เก็บที่ A,B นำค่า offset(แปลงเป็น 32 bits และ shiftซ้าย 2) มาที่ ALU และนำมาบวกกับ PC(PC+4) และไปเก็บที่ ALUout)*
  
-3. ALUOut = A + sign-extend(IR[15-0])
+    3. ALUOut = A + sign-extend(IR[15-0])
 
-    *(นำค่า จาก A เข้ามาบวกกับ offset และนำค่าไปไว้ที่ ALUout)*
+  *(นำค่า จาก A เข้ามาบวกกับ offset และนำค่าไปไว้ที่ ALUout)*
  
-4. MDR = Memory[ALUout]
+    4. MDR = Memory[ALUout]
 
-    *(ค่าที่ได้จาก ALUout คือ address มันจะไปชี้ address นี้ที่ memory และก็อ่านค่าออกมา)*
+  *(ค่าที่ได้จาก ALUout คือ address มันจะไปชี้ address นี้ที่ memory และก็อ่านค่าออกมา)*
   
-5. Reg[IR[20-16]] = MDR
+    5. Reg[IR[20-16]] = MDR
 
-    *(ค่าที่อ่านออกมานำไปใส่ใน register rt)*
+  *(ค่าที่อ่านออกมานำไปใส่ใน register rt)*
 
-<br>**ส่งการบ้านครั้งที่ 4**
+## ส่งการบ้านครั้งที่ 4
 
-[CLIP4](https://youtu.be/bEka1oMBni0)
+[คลิป อธิบายการทำงานแบบ Multi cycle ของคำสั่ง Load Word(lw) ใน MIPS](https://youtu.be/bEka1oMBni0)
 
 ## การบ้านครั้งที่ 5
 
@@ -262,29 +262,29 @@ lw $rt,offset($rs)
 
 beq $rs,$rt,$offset
 
-คำสั่ง Branch on equal มีการทำงาน 3 ขั้นตอน ดังนี้
+    คำสั่ง Branch on equal มีการทำงาน 3 ขั้นตอน ดังนี้
 
-1. IR = Memory[PC]
+    1. IR = Memory[PC]
 
-   PC = PC + 4
+      PC = PC + 4
    
-   *(อ่านคำสั่งจาก Memory มาเก็บใน Instruction register ขณะเดียวกัน PC = PC + 4 )*
+ *(อ่านคำสั่งจาก Memory มาเก็บใน Instruction register ขณะเดียวกัน PC = PC + 4 )*
    
-2. A = Reg[IR[25-21]]
+    2. A = Reg[IR[25-21]]
 
-   B = Reg[IR[20-16]]
+      B = Reg[IR[20-16]]
    
-   ALUout = PC + (sign-extend(IR[15-0])<<2)
+      ALUout = PC + (sign-extend(IR[15-0])<<2)
    
-    *(แปลงคำสั่ง นำค่า rs กับ rt เก็บที่ A,B นำค่า offset(แปลงเป็น 32 bits และ shiftซ้าย 2) มาที่ ALU และนำมาบวกกับ PC(PC+4) )*
+ *(แปลงคำสั่ง นำค่า rs กับ rt เก็บที่ A,B นำค่า offset(แปลงเป็น 32 bits และ shiftซ้าย 2) มาที่ ALU และนำมาบวกกับ PC(PC+4) )*
     
-3. if(A==B) then PC = ALUout
+    3. if(A==B) then PC = ALUout
 
-   *(branch on equal จะเป็นคำสั่งที่ดูว่า A=B มั้ย ถ้าเท่ามันจะทำการ jump ไปที่ address ใหม่(ที่เกิดจาก offset + PC)*
+      *(branch on equal จะเป็นคำสั่งที่ดูว่า A=B มั้ย ถ้าเท่ามันจะทำการ jump ไปที่ address ใหม่(ที่เกิดจาก offset + PC)*
 
-<br>**ส่งการบ้านครั้งที่ 5**
+## ส่งการบ้านครั้งที่ 5
 
-[CLIP5](https://youtu.be/tH1uvTTxsqw)
+[คลิป อธิบายการทำงานแบบ Multi cycle ของคำสั่ง Branch on equal(beq) ใน MIPS](https://youtu.be/tH1uvTTxsqw)
 
 ## การบ้านครั้งที่ 6
 
@@ -330,27 +330,25 @@ beq $rs,$rt,$offset
 *ดูที่ตัวหนังสือสีแดง บรรทัดแรก คือมีการเขียนบน register บรรทัดที่ 2 มีการนำค่าจาก memory ไปที่ register 
 บรรทัดที่ 3 มี RegDst ควบคุม (เข้า 1 ตรง MUX)*
 
-<br>**ส่งการบ้านครั้งที่ 6**
+## ส่งการบ้านครั้งที่ 6
 
-[CLIP6](https://youtu.be/73PG4tqJF4I)
+[คลิปอธิบาย State Machine ของคำสั่ง R-Type](https://youtu.be/73PG4tqJF4I)
 
 ## การบ้านครั้งที่ 7
 
 ### Pipelining
 
-เป็น Memory ที่อยู่ระหว่าง CPU กับภายนอก
+    เป็น Memory ที่อยู่ระหว่าง CPU กับภายนอก
 
-ทำหน้าที่ลำดับคำสั่งให้มันทำงานเร็วขึ้นและเก็บเฉพาะคำสั่ง
+    ทำหน้าที่ลำดับคำสั่งให้มันทำงานเร็วขึ้นและเก็บเฉพาะคำสั่ง
 
-Pipeline มีหลักการทำงานคือ ถ้า step แรกวงจรว่าง ก็สามารถดึง step 2 มาทำได้เลย โดยไม่ต้องรอ step 1 เสร็จ
-
-1 คำสั่งจบในหลาย cycle แม้คำสั่งแรกยังไม่เสร็จแต่สามารถนำคำสั่งถัดไปมาทำต่อได้เลย
+    Pipeline มีหลักการทำงานคือ 1 คำสั่งจบในหลาย cycle แม้คำสั่งแรกยังไม่เสร็จแต่สามารถนำคำสั่งถัดไปมาทำต่อได้เลย
 
 ![image](https://binaryterms.com/wp-content/uploads/2019/09/Pipelining-Instructions.jpg)
 
-<br>**ส่งการบ้านครั้งที่ 7**
+## ส่งการบ้านครั้งที่ 7
 
-[CLIP7](https://youtu.be/kEEjiIiV1cc)
+[คลิปอธิบาย Pipelining](https://youtu.be/kEEjiIiV1cc)
 
 
 
