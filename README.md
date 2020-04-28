@@ -63,7 +63,7 @@
 
   * เป็นระบบคอมพิวเตอร์ที่เก็บคำสั่งกละข้อมูลแยกกันทำให้มีความเร็วในการประมวลผลดีกว่า
     
-### CISC vs RISC
+### Complex Instruction Set Computer(CISC) vs Reduced Instruction Set Computer(RISC)
  
 <br>**CISC**
 
@@ -253,7 +253,7 @@
 
 จากรูป Multi cycle 
 
-lw $rt,offset($rs)
+<br>**lw $rt,offset($rs)**
 
     คำสั่ง Load word มีการทำงาน 5 ขั้นตอน ดังนี้
 
@@ -295,7 +295,7 @@ lw $rt,offset($rs)
 
 จากรูป Multi cycle 
 
-beq $rs,$rt,$offset
+<br>**beq $rs,$rt,$offset**
 
     คำสั่ง Branch on equal มีการทำงาน 3 ขั้นตอน ดังนี้
 
