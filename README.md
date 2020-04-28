@@ -49,7 +49,6 @@
 ----- | ----- |
 |Jump      |  j   address|
 |Jump&Link  | jal   address|
-### R-type instruction datapath
 
 ### Von Neuman & Harvard Architectures
 
