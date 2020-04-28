@@ -100,7 +100,7 @@
 
 <br>**ALU decoder**
 
-![image](https://i.stack.imgur.com/QwYfS.gif)
+![image](07B8790A-C87F-4A98-AACC-CF519AC340D4.jpeg)
 
 เนื่องจากคำสั่งนี้เป็นประเภท R-Format จึงมีการเขียนคำสั่งเป็น 6 ส่วน
 เมื่อคอมพิวเตอร์ได้รับคำสั่งนี้ ตัว decoder ที่อยู่ในคอมพิวเตอร์จะทำการแปลเป็นคำสั่ง(ดูได้จาก ตาราง ALU decoder)
