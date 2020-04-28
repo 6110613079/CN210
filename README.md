@@ -2,7 +2,7 @@
 ## วิชา Computer Architecture สถาปัตยกรรมคอมพิวเตอร์
 ### สรุปเนื้อหา
 
-###MIPS Instruction format
+### MIPS Instruction format
 
 ทุกคำสั่งใน MIPS จะมีขนาด 32 bits
 
@@ -54,7 +54,6 @@
 ### Von Neuman & Harvard Architectures
 
 ![image](1E6F99B5-00D5-4FAB-A808-9D2C52A45763.jpeg)
-
 
 <br>**Von Neuman**
 
@@ -216,7 +215,7 @@
 
 <br>**Single cycle**
 
-![image](https://cseweb.ucsd.edu/~j2lau/cs141/single_cycle_cpu_datapath.png)
+![image](D8115FC7-681E-48C2-82EE-A618E91EEBE2.jpeg)
 
     * มี 3 ALU
 
@@ -228,7 +227,7 @@
 
 <br>**Multi cycle**
 
-![image](https://i.imgur.com/mWXHWpT.png)
+![image](7003469B-B614-479F-AB5D-0F0C2C708931.jpeg)
 
     * มี 1 ALU
   
@@ -390,7 +389,7 @@ beq $rs,$rt,$offset
 
 ![image](0BBBBF1E-9093-492A-AF35-4979321E8593.jpeg)
 
-* 1 คำสั่งเปรียบได้กับผ้า 1 ถุง เมื่อนำผ้าไปใส่ในเครื่องซักผ้าสีชมพูแล้วพอเสร็จในไปอบแห้ง แต่ตอนนั้นเครื่องซักผ้าว่างจึงนำผ้าอีกถุงมาซักต่อได้เลย
+* 1 คำสั่งเปรียบได้กับผ้า 1 ถุง เมื่อนำผ้าไปใส่ในเครื่องซักผ้าสีชมพูแล้วพอเสร็จนำไปอบแห้ง แต่ตอนนั้นเครื่องซักผ้าว่างจึงนำผ้าอีกถุงมาซักต่อได้เลย
 
 <br>**รูปแสดงความแตกต่างของ Single cycle, Multi cycle และ Pipeline**
 
