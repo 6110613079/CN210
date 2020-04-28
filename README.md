@@ -50,6 +50,7 @@
 |Jump      |  j   address|
 |Jump&Link  | jal   address|
 
+
 ### Von Neuman & Harvard Architectures
 
 ![image](1E6F99B5-00D5-4FAB-A808-9D2C52A45763.jpeg)
