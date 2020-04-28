@@ -48,7 +48,11 @@
 ----- | ----- |
 |Jump      |  j   address|
 |Jump&Link  | jal   address|
+### Von Neuman & Harvard Architectures
+<br>**Von Neuman 
 
+    * เป็นระบบคอมพิวเตอร์ที่หัวใจสำคัญ ทั้งคำ่งและข้อมูลจะถูกเก็บ
+        
 ## การบ้านครั้งที่ 1
 
 ### คำสั่ง ADD ในคอมพิวเตอร์ MIPS
