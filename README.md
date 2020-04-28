@@ -1,7 +1,8 @@
 ## รายงาน
 ## วิชา Computer Architecture สถาปัตยกรรมคอมพิวเตอร์
 ### สรุปเนื้อหา
-<br>**MIPS Instruction format**
+
+###MIPS Instruction format
 
 ทุกคำสั่งใน MIPS จะมีขนาด 32 bits
 
@@ -48,10 +49,26 @@
 ----- | ----- |
 |Jump      |  j   address|
 |Jump&Link  | jal   address|
-### Von Neuman & Harvard Architectures
-<br>**Von Neuman 
+### R-type instruction datapath
 
-    * เป็นระบบคอมพิวเตอร์ที่หัวใจสำคัญ ทั้งคำ่งและข้อมูลจะถูกเก็บ
+### Von Neuman & Harvard Architectures
+<br>**Von Neuman**
+
+     *เป็นระบบคอมพิวเตอร์ที่หัวใจสำคัญ ทั้งคำสั่งและข้อมูลจะถูกเก็บบนหน่วยความจำเดียวกัน
+    
+<br>**Harvard Architecture**
+
+     *เป็นระบบคอมพิวเตอร์ที่เก็บคำสั่งกละข้อมูลแยกกันทำให้มีความเร็วในการประมวลผลดีกว่า
+    
+### CISC vs RISC
+ 
+<br>**CISC**
+
+     *ชุดคำสั่งมีหลากหลาย 
+     *เป็นแบบ Multi cycle ทุกคำสั่งใช้เวลไม่เท่ากัน
+     *เขียนโรแกรม/ด้ง่ายกว่าเพราะมีชุดคำสั่งเยอะ
+     *มีคำสั่งที่เข้าไปใน memory นกกจากคำสั่ง load word,store word
+     *ขนาดของ instruction สามารถเปลี่ยนแปลงได้
         
 ## การบ้านครั้งที่ 1
 
